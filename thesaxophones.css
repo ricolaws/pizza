@@ -1,0 +1,91 @@
+body {
+	max-width: 600px;
+	margin: auto;
+	background-color: oldlace;
+}
+ 
+	
+h2 a:link {
+	text-decoration: none;
+	color: cadetblue;
+}
+
+h2 a:visited {
+    background-color: none;
+    color: cadetblue;
+}
+
+h2 a:hover {
+    background-color: none;
+    color: aqua;
+}
+
+h2 a:active {
+    background-color: hotpink;
+    color: aqua;
+} 
+
+h2 {
+	font-family: 'Cormorant', serif;
+	font-style: italic;
+	font-weight: 500;
+	font-size: 1.5rem;
+	margin-top: 20px;
+	padding: 8px 8px;
+	color: cadetblue;
+	text-align: center;
+
+	
+}
+
+#cover {
+	width: 100%;
+    margin: auto;
+}
+
+#nav {
+	text-align: center;
+}
+
+.button {
+    background-color: oldlace;
+    font-family: 'Cormorant';
+    border: 1px solid cadetblue;
+    color: cadetblue;
+    padding: 12px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2.5%;
+    cursor: pointer;
+    width: 19%;
+    float:left; 
+}
+
+.button:hover {
+    color: aqua;
+}
+
+/*
+#key {
+	 width: 100px;
+    height: 100px;
+    background: cyan;
+    position :relative;
+    -webkit-animation: mymove 4s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 4s infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    from {top: 0px;}
+    to {top: 400px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 400px;}
+}*/
+

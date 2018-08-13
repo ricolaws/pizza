@@ -1,0 +1,118 @@
+body {
+	max-width: 600px;
+	margin: auto;
+	background: linear-gradient(cornsilk, yellow, azure);
+	border: 2px solid black;
+	border-radius: 20px;
+}
+ p {
+ 	text-align: right;
+ 	color: cornsilk;
+ }
+ p:hover {
+    background-image: url("https://www.philbarone.com/graphics/phil-barone-vintage-alto-saxophone-honey-gold-lacquer-finish.jpg");
+    opacity: 0.7;
+    /*background-size: 200px 250px;*/
+}
+
+
+.blinking{
+	font-size: 2.8rem;
+	vertical-align: sub;
+	font-style: normal;
+    animation:blinkingText 0.4s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: purple;    }
+    49%{    color: springgreen; }
+    50%{    color: violet; }
+    99%{    color:springgreen;  }
+    100%{   color: purple;    }
+}
+
+h2 a:link {
+	text-decoration: none;
+	color: red;
+}
+
+h2 a:visited {
+    background-color: none;
+    color: red;
+}
+
+h2 a:hover {
+    background-image: url("http://www.buffet-crampon.com/en/instruments/saxophones/");
+    color: aqua;
+}
+
+h2 a:active {
+    background-color: hotpink;
+    color: aqua;
+} 
+
+h2 {
+	font-family: 'Cinzel Decorative', cursive;
+	font-style: italic;
+	font-weight: 700;
+	font-size: 1.5rem;
+	margin-top: 20px;
+	padding: 8px 8px;
+	color: cadetblue;
+	text-align: center;	
+}
+
+
+#cover {
+	width: 100%;
+    margin: auto;
+}
+
+.nav {
+	text-align: center;
+}
+
+.button {
+    background-color: forestgreen;
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 400
+    border: 2px solid hotpink;
+    color: aqua;
+    padding: 12px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2.5%;
+    cursor: pointer;
+    width: 19%;
+    float:left; 
+}
+
+.button:hover {
+    color: red;
+}
+
+
+#key {
+	 width: 200px;
+    height: 200px;
+    background: cyan;
+    position :relative;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 4s infinite;
+    animation-delay: 2.5s;
+    animation-direction: alternate;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    from {top: 0px;}
+    to {top: 400px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 400px;}
+}
+

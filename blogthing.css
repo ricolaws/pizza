@@ -1,0 +1,50 @@
+body {
+	max-width: 700px;
+	width: 70%;
+	margin: 20px auto;
+	border: 20px solid whitesmoke;
+	padding: 20px;
+}
+
+h1 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 600;
+	font-size: 2.0rem;
+}
+
+.date {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: lightsalmon;
+	text-transform: uppercase;
+	letter-spacing: 0.3rem;
+	font-weight: 300;
+	font-size: 15px;
+	margin-top: 15px;
+	
+}
+
+p{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+}
+
+.firstp {
+	border-left: 6px solid turquoise;
+	padding-left: 6px;
+
+}
+
+hr {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double magenta;
+    color: magenta;
+    text-align: center;
+}
+hr {
+	 border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
