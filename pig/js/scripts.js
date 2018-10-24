@@ -8,6 +8,7 @@ function add(a, b) {
 }
 
 var turnScore = [];
+var totalScore = [];
 
 var player1 = {
   name: "Player 1",
@@ -34,5 +35,15 @@ $(document).ready(function() {
 
 
     console.log(turnScore.reduce(add, 0));
+  });
+  $("form#player1End").submit(function(event) {
+    event.preventDefault();
+    totalScore.push(turnScore.reduce(add, 0));
+    var newScore = totalScore.reduce(add, 0);
+    $("#player1-total-score").text(totalScore.reduce(add, 0));
+    if (newScore > 50) {
+      console.log("win");
+    }
+    turnScore = [0];
   });
 });
