@@ -8,10 +8,12 @@ var game = {
 }
 
 function switchPlayer() {
-  if (currentPlayer === player2) {
+  if (currentPlayer === player1) {
+    currentPlayer = player2
     otherPlayer = player1
   }
   else {
+    currentPlayer = player1
     otherPlayer = player2
   }
 };
@@ -43,6 +45,8 @@ function roll() {
   if (x === 1) {
     console.log("end turn");
     turnScore1 = [0];
+    switchPlayer();
+    console.log(currentPlayer)
   }
   else {
     turnScore1.push(x);
