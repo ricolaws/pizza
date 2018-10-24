@@ -2,3 +2,7 @@ body {
   background-color: #eee;
   font-family: sans-serif;
 }
+
+.jumbotron {
+  color: red;
+}
