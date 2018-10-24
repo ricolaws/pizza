@@ -20,12 +20,14 @@ function switchPlayer() {
 
 var player1 = {
   name: "Player 1",
-  score: totalScore1
+  score: totalScore1,
+  turn: true
 }
 
 var player2 = {
   name: "Player 2",
-  score: totalScore2
+  score: totalScore2,
+  turn: false
 }
 
 var turnScore1 = [];
