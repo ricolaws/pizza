@@ -5,4 +5,30 @@ body {
 
 .jumbotron {
   color: red;
+  text-align: center;
+}
+
+.btn-dice {
+  width: 100px;
+  padding: 10px;
+  margin: 5px;
+  border: 2px solid black;
+}
+
+.btn-dice:hover {
+  width: 100px;
+  padding: 10px;
+  background-color: red;
+  margin: 5px;
+  border: 2px solid black;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.grid-item {
+  padding: 20px;
+  text-align: center;
+  height: 100px;
 }

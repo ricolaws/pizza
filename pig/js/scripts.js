@@ -1,3 +1,35 @@
+var game = {
+  currentPlayer: player1,
+  otherPlayer: player2,
+  resetGame: function() {
+    totalScore1 = 0;
+    totalScore2 = 0;
+  }
+}
+
+function switchPlayer() {
+  if (currentPlayer === player2) {
+    otherPlayer = player1
+  }
+  else {
+    otherPlayer = player2
+  }
+};
+
+var player1 = {
+  name: "Player 1",
+  score: totalScore1
+}
+
+var player2 = {
+  name: "Player 2",
+  score: totalScore2
+}
+
+var turnScore1 = [];
+var totalScore1 = [];
+var turnScore2 = [];
+var totalScore2 = [];
 
 function rndNumber() {
   return Math.floor(Math.random() * 6) + 1;
@@ -7,21 +39,13 @@ function add(a, b) {
     return a + b;
 }
 
-var turnScore = [];
-var totalScore = [];
-
-var player1 = {
-  name: "Player 1",
-  score: 0
-}
-
 function roll() {
   if (x === 1) {
     console.log("end turn");
-    turnScore = [0];
+    turnScore1 = [0];
   }
   else {
-    turnScore.push(x);
+    turnScore1.push(x);
   }
 }
 
@@ -31,19 +55,19 @@ $(document).ready(function() {
     x = rndNumber();
     roll();
     $("#dice").text(x);
-    $("#player1-score-keeper").text(turnScore.reduce(add, 0));
+    $("#player1-score-keeper").text(turnScore1.reduce(add, 0));
 
 
-    console.log(turnScore.reduce(add, 0));
+    console.log(turnScore1.reduce(add, 0));
   });
   $("form#player1End").submit(function(event) {
     event.preventDefault();
-    totalScore.push(turnScore.reduce(add, 0));
-    var newScore = totalScore.reduce(add, 0);
-    $("#player1-total-score").text(totalScore.reduce(add, 0));
+    totalScore1.push(turnScore1.reduce(add, 0));
+    var newScore = totalScore1.reduce(add, 0);
+    $("#player1-total-score").text(totalScore1.reduce(add, 0));
     if (newScore > 50) {
       console.log("win");
     }
-    turnScore = [0];
+    turnScore1 = [0];
   });
 });
