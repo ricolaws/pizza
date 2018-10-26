@@ -75,20 +75,12 @@ $(document).ready(function() {
       var x = "bacon-wrapped money"
       pizza1.pushTopping(x);
     });
-
-    // if (pizza1.size === "small") {
-    //   console.log(10 + pizza1.values.reduce(add, 0));
-    // }
-    // else {
-    //   console.log(100 + pizza1.values.reduce(add, 0));
-    // }
+// pizza price calculation with values from the form
     var y = pizza1.values;
     pizza1.calculatePrice(y);
-    $("#pizza-price").text("$" + pizza1.price);
+// print it
+    var toppers = pizza1.toppings.join(", ");
+    $("#pizza-price").text("your " + pizza1.size + " " + toppers + " pizza will be $" + pizza1.price);
 
-    // var item = pizza1.values;
-    //
-    // $("#pizza-price").text(item.reduce(add, 0));
-    // console.log(pizza1);
   });
 });

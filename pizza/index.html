@@ -3,6 +3,7 @@
 <link rel="stylesheet" href="css/master.css">
 <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
 <script type="text/javascript" src="js/scripts.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Codystar|Forum" rel="stylesheet">
   <head>
     <meta charset="utf-8">
     <title>Dream of Pizza Dreams</title>
@@ -10,10 +11,11 @@
   <body>
     <h2>Dream Pizza</h2>
     <div class="greeting">
-      <h4>Sweet Pizza is nice to you. Fulfill your pizza wish is like a Game Genie of Pizza</h4>
+      <p>Sweet Pizza is nice to you. Fulfill your pizza wish is like a Game Genie of Pizza</p>
+      <p>Large pizza = $14 a small size is only $10 and all pizza are made with rare minerals and heirloom grain fermented immediately in stone crocks before vaporization in state-of-the-art pizza kilns. "Sauce" is improvised constantly by local teenagers. No returns thx.</p>
     </div>
     <hr>
-    <div class="order-form">
+    <div class="order-form" "row">
       <form class="order-form">
         <div class="pizza-size">
           <input type="radio" name="pizza-size" value="small"> Small . . 12"<br>
@@ -21,7 +23,7 @@
         </div>
         <div class="regular-toppings">
           <p>Regular-style Toppings. &nbsp;&nbsp;<span>$2</span></p>
-          <input type="checkbox" name="pepparoni" value="2"> pepparoni<br>
+          <input type="checkbox" name="pepperoni" value="2"> pepperoni<br>
           <input type="checkbox" name="olive" value="2"> olive<br>
           <input type="checkbox" name="wing" value="2"> chicken wing<br>
         </div>
@@ -41,8 +43,9 @@
         <button id="add-pizza" class="pizza-btn" type="submit">ADD TO CART</button>
         <button id="place-order" class="pizza-btn" type="button">FINISH ORDER</button>
       </form>
+      <div id="pizza-description">
+      </div>
       <div id="pizza-price">
-
       </div>
     </div>
 </html>
