@@ -11,18 +11,24 @@ h2 {
   font-size: 4em;
   font-weight: 200;
   text-align: center;
+  color: #00b25c;
 }
 
 .greeting h4 {
-  font-size: 1.4em;
+  font-size: 1.3em;
   font-weight: 200;
+  color: #FFCDC4;
 }
 
 .order-form {
   padding-left: 120px;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
+.order-form span {
+  font-size: 1.3em;
+  color: #00b25c;
+}
 .pizza-btn {
   width: 120px;
   padding:20px;
