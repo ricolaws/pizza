@@ -3,8 +3,19 @@ function Pizza (size, toppings, values) {
   this.size = size;
   this.toppings = [];
   this.values = [];
+  this.price;
 }
 
+Pizza.prototype.calculatePrice = function(y) {
+
+  //size and values array added to get price
+  if (this.size === 'small') {
+    this.price = 10 + y.reduce(add, 0);
+  } else if (this.size === 'large') {
+    this.price = 14 + y.reduce(add, 0) ;
+  };
+};
+// pushes toppings into topping array
 Pizza.prototype.pushTopping = function(x) {
   this.toppings.push(x)
 };
@@ -64,9 +75,20 @@ $(document).ready(function() {
       var x = "bacon-wrapped money"
       pizza1.pushTopping(x);
     });
-    item = pizza1.values;
-    $("#pizza-price").text(item.reduce(add, 0));
-    // console.log(getSum(item));
-    console.log(pizza1);
+
+    // if (pizza1.size === "small") {
+    //   console.log(10 + pizza1.values.reduce(add, 0));
+    // }
+    // else {
+    //   console.log(100 + pizza1.values.reduce(add, 0));
+    // }
+    var y = pizza1.values;
+    pizza1.calculatePrice(y);
+    $("#pizza-price").text("$" + pizza1.price);
+
+    // var item = pizza1.values;
+    //
+    // $("#pizza-price").text(item.reduce(add, 0));
+    // console.log(pizza1);
   });
 });
