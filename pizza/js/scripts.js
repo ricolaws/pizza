@@ -18,6 +18,9 @@ $(document).ready(function() {
     pizza1Values = $(this).val();
     pizza1.values.push(pizza1Values)
     });
+    $('input[name=pizza-size]:checked').each(function(){
+    pizza1.size= $(this).val();
+    });
     $("input:checkbox[name=pepparoni]:checked").each(function(){
       var x = "pepparoni"
       pizza1.pushTopping(x);
