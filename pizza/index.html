@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
 <link rel="stylesheet" href="css/master.css">
 <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
 <script type="text/javascript" src="js/scripts.js"></script>
@@ -11,41 +12,44 @@
   <body>
     <h2>Dream Pizza</h2>
     <div class="greeting">
-      <p>Sweet Pizza is nice to you. Fulfill your pizza wish is like a Game Genie of Pizza</p>
+      <p>Dream Pizza is nice to you. Fulfill your pizza wish is like a Game Genie of Pizza </p>
       <p>Large pizza = $14 a small size is only $10 and all pizza are made with rare minerals and heirloom grain fermented immediately in stone crocks before vaporization in state-of-the-art pizza kilns. "Sauce" is improvised constantly by local teenagers. No returns thx.</p>
     </div>
-    <hr>
+    <hr class="line-style">
     <div class="order-form" "row">
-      <form class="order-form">
-        <div class="pizza-size">
-          <input type="radio" name="pizza-size" value="small"> Small . . 12"<br>
-          <input type="radio" name="pizza-size" value="large"> Large . . 16"<br>
-        </div>
-        <div class="regular-toppings">
-          <p>Regular-style Toppings. &nbsp;&nbsp;<span>$2</span></p>
-          <input type="checkbox" name="pepperoni" value="2"> pepperoni<br>
-          <input type="checkbox" name="olive" value="2"> olive<br>
-          <input type="checkbox" name="wing" value="2"> chicken wing<br>
-        </div>
-        <br>
-        <div class="deluxe-toppings">
-          <p>Deluxe-style Toppings. &nbsp;&nbsp;<span>$3</span></p>
-          <input type="checkbox" name="gyoza" value="3"> gyoza<br>
-          <input type="checkbox" name="cricket" value="3"> cricket<br>
-          <input type="checkbox" name="fungus" value="3"> black fungus<br>
-        </div>
-        <div class="hi-level-toppings">
-          <p>Dream-level Toppings. &nbsp;&nbsp;<span>$5</span></p>
-          <input type="checkbox" name="scampi" value="5"> scampi<br>
-          <input type="checkbox" name="beef" value="5"> A5 wagyu beef<br>
-          <input type="checkbox" name="money" value="5"> bacon-wrapped money<br>
-        </div>
-        <button id="add-pizza" class="pizza-btn" type="submit">ADD TO CART</button>
-        <button id="place-order" class="pizza-btn" type="button">FINISH ORDER</button>
-      </form>
-      <div id="pizza-description">
+      <div class="column">
+        <form class="order-form">
+          <div class="pizza-size">
+            <input type="radio" name="pizza-size" value="small"> Small . . 12"<br>
+            <input type="radio" name="pizza-size" value="large"> Large . . 16"<br>
+          </div>
+          <div class="regular-toppings">
+            <p>Regular-style Toppings. &nbsp;&nbsp;<span>$2</span></p>
+            <input type="checkbox" name="pepperoni" value="2"> pepperoni<br>
+            <input type="checkbox" name="olive" value="2"> olive<br>
+            <input type="checkbox" name="wing" value="2"> chicken wing<br>
+          </div>
+          <br>
+          <div class="deluxe-toppings">
+            <p>Deluxe-style Toppings. &nbsp;&nbsp;<span>$3</span></p>
+            <input type="checkbox" name="gyoza" value="3"> gyoza<br>
+            <input type="checkbox" name="cricket" value="3"> cricket<br>
+            <input type="checkbox" name="fungus" value="3"> black fungus<br>
+          </div>
+          <div class="hi-level-toppings">
+            <p>Dream-level Toppings. &nbsp;&nbsp;<span>$5</span></p>
+            <input type="checkbox" name="crab-leg" value="5"> crab leg<br>
+            <input type="checkbox" name="beef" value="5"> A5 wagyu beef<br>
+            <input type="checkbox" name="money" value="5"> bacon-wrapped money<br>
+          </div>
+          <button id="add-pizza" class="pizza-btn" type="submit">ADD TO CART</button>
+          <button id="place-order" class="pizza-btn" type="button">FINISH ORDER</button>
+        </form>
       </div>
-      <div id="pizza-price">
+      <div class="column">
+        <div id="pizza-box">
+          <p id="pizza-price"></p>
+        </div>
       </div>
     </div>
 </html>

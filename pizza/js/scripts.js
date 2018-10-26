@@ -39,8 +39,8 @@ $(document).ready(function() {
     pizza1Values = parseInt($(this).val());
     pizza1.values.push(pizza1Values)
     });
-    $("input:checkbox[name=pepparoni]:checked").each(function(){
-      var x = "pepparoni"
+    $("input:checkbox[name=pepperoni]:checked").each(function(){
+      var x = "pepperoni"
       pizza1.pushTopping(x);
     });
     $("input:checkbox[name=olive]:checked").each(function(){
@@ -63,8 +63,8 @@ $(document).ready(function() {
       var x = "black fungus"
       pizza1.pushTopping(x);
     });
-    $("input:checkbox[name=scampi]:checked").each(function(){
-      var x = "scampi"
+    $("input:checkbox[name=crab-leg]:checked").each(function(){
+      var x = "crab leg"
       pizza1.pushTopping(x);
     });
     $("input:checkbox[name=beef]:checked").each(function(){
@@ -75,12 +75,19 @@ $(document).ready(function() {
       var x = "bacon-wrapped money"
       pizza1.pushTopping(x);
     });
-// pizza price calculation with values from the form
+    // pizza price calculation with values from the form
     var y = pizza1.values;
     pizza1.calculatePrice(y);
-// print it
+    // print it
     var toppers = pizza1.toppings.join(", ");
-    $("#pizza-price").text("your " + pizza1.size + " " + toppers + " pizza will be $" + pizza1.price);
-
+    $("#pizza-price").append("Your " + pizza1.size + " " + toppers + " pizza will be $" + pizza1.price + ". ");
+    // reset inputs
+    $('input').prop('checked', false);
+  });
+  // place order
+  $("#place-order").click(function(event) {
+    event.preventDefault();
+    var person = prompt("Please enter your name");
+      $("#pizza-price").append("OK " + person + "! Prepare to download pizza!");
   });
 });

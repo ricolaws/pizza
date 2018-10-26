@@ -15,6 +15,12 @@ h2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.line-style {
+  border-top: 4px dotted;
+  border-bottom: 2px;
+}
+
 .greeting {
   font-size: 1.2em;
   font-weight: 200;
@@ -29,6 +35,18 @@ h2 {
 .order-form span {
   font-size: 1.3em;
 }
+.column {
+    float: left;
+    width: 40%;
+    padding: 10px;
+}
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .pizza-btn {
   width: 120px;
   padding:20px;
@@ -42,4 +60,18 @@ h2 {
   margin-right: 10px;
   margin-top: 20px;
   background-color: #0040ee;
+}
+
+#pizza-price {
+  /* padding-top: 200px; */
+  text-align: center;
+}
+
+#pizza-box {
+  margin-top: 200px;
+  padding-top: 100px;
+  padding-bottom: 100px
+  text-align: center;
+  width: auto;
+  /* border: 2px ridge #eee; */
 }
